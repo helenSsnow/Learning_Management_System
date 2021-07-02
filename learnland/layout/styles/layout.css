@@ -22,28 +22,64 @@ File: Layout CSS
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{padding:50px 0;}
+#header {
+	width: 100%;
+    background-color: rgba(114, 114, 114, 0.6);
+    /* color: rgb(255, 255, 255);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+/* #header .img {
+
+} */
 
 #header #logo{text-align:center;}
 #header #logo *{margin:0; padding:0; line-height:1;}
-#header #logo h1{font-size:42px; letter-spacing:5px; text-transform:uppercase;}
-#header #logo p{margin-top:-3px; font-size:.9rem; font-style:italic; text-transform:lowercase;}
+#header #logo h1{font-size:42px; letter-spacing:5px; text-transform:uppercase; color: rgb(155, 150, 150);}
+#header #logo p{margin-top:-3px; font-size:.9rem; font-style:italic; text-transform:lowercase; color: rgb(155, 150, 150);}
 
 /* Search
 --------------------------------------------------------------------------------------------------------------- */
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:120px 0; text-align:center;}
+#pageintro{
+	text-align:center;
+}
 
-#pageintro article{display:block; max-width:60%; margin:0 auto;}
-#pageintro article .introtxt{margin:0 0 50px 0; padding:30px; border-radius:0 50px;}
-#pageintro article .heading{margin-bottom:30px; font-size:36px;}
-#pageintro article p:last-of-type{margin-bottom:0;}
+#pageintro article {
+	display:block; 
+	/* max-width:60%;  */
+	margin:0 auto;
+
+
+}
+#pageintro article .introtxt {
+	margin: 50px 0 50px 0;
+	padding: 40px;
+	border-radius: 0 50px;
+	width: 500px;
+}
+
+
+#pageintro article .heading {
+	margin-bottom:30px; 
+	font-size:36px;
+}
+#pageintro article p:last-of-type {
+	margin-bottom:0;
+}
 
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+/* .container{padding:80px 0;} */
 
 /* Content */
 .container .content{}
@@ -154,11 +190,12 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
-#mainav{margin-bottom:40px; border-bottom:1px solid;}
+#mainav{ padding: 45px 0px 30px 0px; }
 #mainav ul{text-transform:uppercase; text-align:center;}
 #mainav ul ul{z-index:9999; position:absolute; width:160px; text-transform:none; text-align:left;}
 #mainav ul ul ul{left:160px; top:0;}
-#mainav li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#mainav li{display:inline-block; position:relative; margin:0 30px 0 30px; padding:0; color: rgb(155, 150, 150); float: left;}
+#mainav li.active{display:inline-block; position:relative; margin:0px 0px 0px 450px; padding:0; color: rgb(155, 150, 150);}
 #mainav li:last-child{margin-right:0;}
 #mainav li li{width:100%; margin:0;}
 #mainav li a{display:block; padding:20px 0;}
@@ -221,7 +258,7 @@ td{border-width:0 1px;}
 --------------------------------------------------------------------------------------------------------------- */
 #gallery{display:block; width:100%; margin-bottom:50px;}
 #gallery figure figcaption{display:block; width:100%; clear:both;}
-#gallery li{margin-bottom:30px;}
+/* #gallery li{margin-bottom:30px;} */
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -242,8 +279,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#82A800; border-color:#82A800;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#82A800; border-color:#82A800;box-shadow: 0 0 3px;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit; background: rgb(196, 194, 193, 0.1); box-shadow: 0 0 5px;}
 
 
 /* Rows */
@@ -257,7 +294,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 
 
 /* Header */
-#header #logo a{color:inherit;}
+#header #logo a{color: rgb(155, 150, 150);}
 
 
 /* Page Intro */
@@ -329,9 +366,9 @@ table a, #comments a{background-color:inherit;}
 
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width:978px){
+/* @media screen and (min-width:978px){
 	.hoc{max-width:978px;}
-}
+} */
 
 
 /* Mobile Devices
@@ -396,3 +433,504 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
+
+
+
+/* Cuses
+--------------------------------------------------------------------------------------------------------------- */
+
+
+.mainPhoto {
+    height: 65vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(161, 78, 78, 0.1), rgba(0, 0, 0, 0.1)),	url(../../images/backgrounds/main-backgraund.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curses {
+	height: 1500px;
+}
+
+
+
+
+
+
+
+
+/* links */
+
+a:link {
+    color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+    text-decoration: underline;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+/* обычный текст */
+h4 {
+  color: #000000;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h5 {
+  color: #808080;
+  font-weight: 100;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: #f0621a;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: border-radius 0.4s ease-in;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #df520c;
+  border-radius: 30px;
+}
+
+
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 18px;
+  list-style-type: none;
+}
+
+header nav li{
+  padding-left: 30px;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header .infa {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0  25px 0 0;
+}
+
+
+
+
+.block {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.rooms,
+.comfort,
+.contacts {
+    background-color: rgb(245, 245, 245);
+}
+
+.aboutUs,
+.booking {
+    background-color: rgb(255, 255, 255);
+}
+
+/* room */
+
+.rooms H2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  width: 1480px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 60px;
+
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .carousel {
+    padding: 0;
+  }
+  
+}
+
+@media (max-width: 1640px) {
+  .carousel {
+    max-width: 1110px;   
+  }
+}
+
+@media (max-width: 1240px) {
+  .carousel {
+    max-width: 740px;   
+  }
+}
+
+@media (max-width: 860px) {
+  .carousel {
+    max-width: 370px;   
+  }
+} 
+
+/* @media (max-width: 1440px) {
+  .container {
+    max-width: 1110px;   
+  }
+}  */
+
+
+
+
+
+
+
+.arrow {
+  position: absolute;
+  /* top: 50%; */
+  font-size: 24px;
+  /* line-height: 24px; */
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+  /* border-radius: 50%;  */
+}
+
+.prev {
+  left: 7px;
+  padding: 10px 10px;
+}
+
+.next {
+  right: 7px;
+  padding: 10px 10px;
+}
+
+@media (max-width: 500px) {
+  .prev {
+    display: none;
+  }
+  .next {
+    display: none;
+  }
+}
+
+.gallery {
+  width: 1480px;
+  overflow: hidden;
+}
+
+.gallery .images {
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+
+  /* margin-left: -160px; */
+}
+
+.gallery li {
+  display: inline-block;
+
+  /* display: flex; */
+
+  /* border : 1px solid #E76D13; */
+}
+
+@media (max-width: 500px) {
+
+  .gallery li {
+    display: inline-block;
+  
+    display: flex;
+  
+    /* border : 1px solid #E76D13; */
+  }
+
+  /* .gallery li { */
+    /* display: flex; */
+  /* } */
+  .courseCard {
+    background-color: rgb(231, 231, 231);
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+.carousel .courseCard {
+  width: 340px;
+  /* height: 560px; */
+  padding: 15px 15px;
+  /* margin: 0 10px; */
+
+  /* transition: all 10s; */
+
+  transition: background-color 0.3s ease-in;
+}
+
+
+
+/* .allCards {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .roomCard { */
+  /* width: 340px; */
+
+  /* background-color: black; */
+
+  /* z-index; */
+
+  /* opacity: 50%; */
+
+  /* height: 300px; */
+/* } */
+
+.courseCard:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+@media (max-width: 500px) {
+
+  /* .gallery li { */
+    /* display: flex; */
+  /* } */
+  /* .roomCard {
+    background-color: rgb(231, 231, 231);
+    margin: 10px 0;
+  } */
+}
+
+.coursePhoto {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.coursePhoto h1 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  text-shadow: 1px 1px 1px black, 0 0 1em black; /* Параметры тени */
+
+  position: absolute;
+  top: 185px;
+  left: 10px;
+}
+
+.coursePhoto img {
+  width: 100%;
+}
+
+.courseInfa{
+  padding: 10px 0 0 0;
+}
+
+.courseInfa p {
+  padding-top: 15px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.courseInfa .courseSize {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+.courseSize p {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.courseSize h5 {
+  margin: 0; 
+}
+
+.courseInfa ul {
+  padding: 0;
+  margin: 0;
+}
+
+.courseInfa li {
+  font-size: 12px;
+  /* list-style-type: none; */
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+
+
+  list-style-type: none;
+
+
+}
+
+.courseInfa .price {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.courseInfa .price h5 {
+  font-size: 14px;
+  text-align: right;
+  margin: 0;
+}
+
+.courseInfa button {
+  margin-top: 10px;
+}
+
+/* aboutUs */
+.aboutUsText {
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+
+
+
+
+footer {
+	background-color: rgb(19, 19, 19);
+}
+* {
+  margin: 0;
+  color: rgb(145, 145, 145);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.one_quarter_first {
+	
+	width: 500px;
+	padding-left: 30px;
+
+}
+
+#list_course img { 
+  display: block;
+  } 
+
+
+
+
+  .list {
+    width: 1480px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 10px 60px;
+  
+    position: relative;
+  }
+  
+  @media (max-width: 500px) {
+    .list {
+      padding: 0;
+    }
+    
+  }
+  
+  @media (max-width: 1640px) {
+    .list {
+      max-width: 1110px;   
+    }
+  }
+  
+  @media (max-width: 1240px) {
+    .list {
+      max-width: 740px;   
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .list {
+      max-width: 370px;   
+    }
+  }
+
+  .list .courseCard {
+    width: 340px;
+    padding: 15px 15px;
+  
+    transition: background-color 0.3s ease-in;
+  }
+
+ 
