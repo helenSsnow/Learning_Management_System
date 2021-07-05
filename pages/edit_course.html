@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Learnland</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+
+<body>
+
+
+    <header id="header" class="clear wrapper overlay">
+        <div class="wrapperNarrow">
+            <nav id="mainav" class="clear">
+                <ul class="clear">
+                    <li><a href="teacher_profile.html"> Профиль </a></li>
+                    <li><a href="authors_courses.html"> Мои курсы </a></li>
+                </ul>
+            </nav>
+
+            <div id="logo" class="active center">
+                <a href="../index.html">
+                    <h1>Learnland</h1>
+                    <p>Получать знания - легко!</p>
+                </a>
+            </div>
+            <button class="btn"><a href="create_course.html">Создать курс</a></button>
+            <button class="btn"><a href="../index.html">Выйти</a></button>
+        </div>
+    </header>
+
+
+
+    <main class="otherPages">
+
+        <div class="form_wrapper">
+
+            <h2> Редактировать курс </h2>
+
+            <div class="row clearfix">
+
+
+                <form class="editcourse">
+
+                    Загрузить обложку
+                    <div class="input_field">
+
+                        <input type="file" name="name" placeholder="Выберите обложку курса" required />
+                    </div>
+
+                    Изменить название
+                    <div class="input_field">
+                        <input type="text" name="name" placeholder="Java для начинающих" required />
+                    </div>
+
+                    <div class="input_field">
+                        <textarea name="message" style="width:100%; height:200px;">
+Надоело пытаться выучить Java по нескольким источникам? Тогда этот курс точно для Вас!
+Привет, друзья! Меня зовут Заур Трегулов, и я являюсь автором данного курса.          
+Если вы просматриваете данное обращение, то Вы, скорее всего уже в курсе, что Java присутствует во всех сферах жизни и решает практически любые задачи.  На Java пишутся серверные приложения, веб приложения, разные программы для десктопа ииии барабанная дробь. Если вы хотите научиться писать Android приложения, то Добро пожаловать в мир Java. Ведь подавляющее большинство Android приложений пишется именно на Java
+</textarea>
+                    </div>
+
+                    Изменить категорию
+                    <div class="input_field select_option">
+                        <select>
+                            <option>Разработка</option>
+                            <option>Бизнес</option>
+                            <option>Маркетинг</option>
+                            <option>Дизайн </option>
+                            <option>Разработка</option>
+                            <option>Бизнес</option>
+                            <option>Маркетинг</option>
+                            <option>Дизайн </option>
+                            <option>Разработка</option>
+                            <option>Бизнес</option>
+                            <option>Маркетинг</option>
+                        </select>
+                        <div class="select_arrow"></div>
+                    </div>
+
+
+                    Изменить уровень сложности
+                    <div class="input_field radio_option">
+                        <!-- Сложность -->
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1">Для начинающих</label>
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2">Для продолжающих</label>
+                        <input type="radio" name="radiogroup1" id="rd3">
+                        <label for="rd3">Для продвинутых</label>
+                    </div>
+
+
+
+
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Название урока</th>
+                            <th>Действие</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Вводный</th>
+                            <th>
+                                <button class="btn"> Изменить </button>
+                                <button class="btn"> Удалить </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Вводный</th>
+                            <th>
+                                <button class="btn"> Изменить </button>
+                                <button class="btn"> Удалить </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Вводный</th>
+                            <th>
+                                <button class="btn"> Изменить </button>
+                                <button class="btn"> Удалить </button>
+                            </th>
+                        </tr>
+                    </table>
+
+                    <h3><a href=""> Добавить урок </a></h3>
+
+
+                    Пользователи связанные с курсом
+
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th> Студент </th>
+                            <th>Действие</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Петя</th>
+                            <th>
+                                <button class="btn"> Снять с курса </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Вася</th>
+                            <th>
+                                <button class="btn"> Снять с курса </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Катя</th>
+                            <th>
+                                <button class="btn"> Снять с курса </button>
+                            </th>
+                        </tr>
+                    </table>
+
+                    Назначить студента на курс
+                    <form>
+
+                        <div class="input_field select_option">
+                            <select>
+                                <option>Петя </option>
+                                <option>Катя</option>
+                                <option>Саша</option>
+                                <option>Маша</option>
+                                <option>Денис </option>
+                                <option>Лена</option>
+                                <option>Дима</option>
+                                <option>Сережа</option>
+                                <option>Андрей </option>
+                            </select>
+                            <div class="select_arrow"></div>
+                        </div>
+
+                    </form>
+
+
+                    <input class="btn" type="submit" value="Обновить" />
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="wrapper coloured">
+        <figure id="logos"></figure>
+    </div>
+
+
+
+
+
+    <footer id="footer" class="block">
+
+        <div class="one_quarter_first">
+            <h6 class="title" style="margin-left: 10px">О нас </h6>
+            <ul class="nospace linklist contact">
+                <li><i class="fa fa-map-marker"></i>
+                    <address>
+                        г.Москва ул. Большие Каменщики, 6с1А
+                    </address>
+                </li>
+                <li><i class="fa fa-phone"></i> +7 (495) 123 4567<br></li>
+                <li><i class="fa fa-envelope-o"></i> info@learnland.ru</li>
+            </ul>
+        </div>
+
+        <div class="one_quarter_first">
+            <h6 class="title" style="margin-left: 10px">преподавателю </h6>
+            <ul class="nospace linklist contact">
+
+                <li><i class="fa fa-map-marker"></i> Авторизация </li>
+                <li><i class="fa fa-phone"></i> Как добавить курс </li>
+                <li><i class="fa fa-envelope-o"></i> Служба поддержки </li>
+            </ul>
+        </div>
+
+
+        <div class="one_quarter_first">
+            <h6 class="title" style="margin-left: 10px">студенту </h6>
+            <ul class="nospace linklist contact">
+                <li><i class="fa fa-map-marker"></i>
+                    <address>
+                        г.Москва ул. Большие Каменщики, 6с1А
+                    </address>
+                </li>
+                <li><i class="fa fa-phone"></i> Список курсов </li>
+                <li><i class="fa fa-envelope-o"></i> Служба поддержки </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
