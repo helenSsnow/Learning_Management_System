@@ -1,0 +1,17 @@
+--Показать все курсы
+SELECT * FROM courses;
+
+--Выборка по рейтингу
+SELECT * 
+FROM courses
+WHERE rating >= 5.0;
+
+--Выборка по автору
+SELECT * 
+FROM courses
+WHERE create_author = 'Петров';
+
+--Выборка по вхождению названия
+select *
+from courses
+where title like '%Ja%';
