@@ -15,3 +15,8 @@ WHERE create_author = 'Петров';
 select *
 from courses
 where title like '%Ja%';
+
+-- Выборка названий курсов принадлежащих юзеру
+SELECT title 
+FROM courses JOIN
+users ON courses.id = users.id_courses;
