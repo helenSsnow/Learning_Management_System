@@ -20,3 +20,11 @@ where title like '%Ja%';
 SELECT title 
 FROM courses JOIN
 users ON courses.id = users.id_courses;
+
+-- Найти лучший курс автора
+SELECT title 
+FROM courses JOIN
+users ON courses.id = users.id_courses AND  courses.rating = (
+         SELECT MAX(rating) 
+         FROM courses
+      );
